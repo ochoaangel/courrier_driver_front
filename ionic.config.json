@@ -1,0 +1,7 @@
+{
+  "name": "courierOne_delivery",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
