@@ -52,7 +52,15 @@ const routes: Routes = [
   {
     path: 'change-language',
     loadChildren: () => import('./change-language/change-language.module').then( m => m.ChangeLanguagePageModule)
+  },  {
+    path: 'deivery-info-warehouse',
+    loadChildren: () => import('./deivery-info-warehouse/deivery-info-warehouse.module').then( m => m.DeiveryInfoWarehousePageModule)
+  },
+  {
+    path: 'deivery-info-storage',
+    loadChildren: () => import('./deivery-info-storage/deivery-info-storage.module').then( m => m.DeiveryInfoStoragePageModule)
   }
+
 ];
 @NgModule({
   imports: [

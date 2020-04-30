@@ -18,7 +18,7 @@
 	<div class="tab_container" [ngSwitch]="tab">
 		<ion-list lines="none" *ngSwitchCase="'new_deliveryes'">
 			<h2>3 {{'active_deliveries' | translate}}</h2>
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryDom()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -34,7 +34,8 @@
 										</h3>
 									</ion-col>
 									<ion-col size="5">
-										<h4>{{'marked_picked' | translate}}</h4>
+										<!-- <h4>{{'marked_picked' | translate}}</h4> -->
+										<h4>Marcado</h4>
 									</ion-col>
 								</ion-row>
 							</div>
@@ -43,7 +44,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>Cash on Pickup</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -76,7 +77,7 @@
 				</div>
 			</ion-item>
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryWare()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -92,7 +93,8 @@
 										</h3>
 									</ion-col>
 									<ion-col size="5">
-										<h4>{{'marked_picked' | translate}}</h4>
+										<!-- <h4>{{'marked' | translate}}</h4> -->
+										<h4>Marcado</h4>
 									</ion-col>
 								</ion-row>
 							</div>
@@ -101,7 +103,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>WebPay</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -135,7 +137,7 @@
 			</ion-item>
 
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryStor()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -151,7 +153,8 @@
 										</h3>
 									</ion-col>
 									<ion-col size="5">
-										<h4>{{'marked_picked' | translate}}</h4>
+										<!-- <h4>{{'marked' | translate}}</h4> -->
+										<h4>Marcado</h4>
 									</ion-col>
 								</ion-row>
 							</div>
@@ -160,7 +163,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -192,7 +195,7 @@
 					</div>
 				</div>
 			</ion-item>
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryDom()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -208,7 +211,8 @@
 										</h3>
 									</ion-col>
 									<ion-col size="5">
-										<h4>{{'marked_picked' | translate}}</h4>
+										<!-- <h4>{{'marked' | translate}}</h4> -->
+										<h4>Marcado</h4>
 									</ion-col>
 								</ion-row>
 							</div>
@@ -217,7 +221,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>Cash on Pickup</strong>
+											<strong>WebPay</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -250,7 +254,7 @@
 				</div>
 			</ion-item>
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryWare()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -266,7 +270,8 @@
 										</h3>
 									</ion-col>
 									<ion-col size="5">
-										<h4>{{'marked_picked' | translate}}</h4>
+										<!-- <h4>{{'marked' | translate}}</h4> -->
+										<h4>Marcado</h4>
 									</ion-col>
 								</ion-row>
 							</div>
@@ -275,7 +280,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -309,7 +314,7 @@
 			</ion-item>
 
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryStor()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -325,7 +330,8 @@
 										</h3>
 									</ion-col>
 									<ion-col size="5">
-										<h4>{{'marked_picked' | translate}}</h4>
+										<!-- <h4>{{'marked' | translate}}</h4> -->
+										<h4>Marcado</h4>
 									</ion-col>
 								</ion-row>
 							</div>
@@ -334,7 +340,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>WebPay</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -366,7 +372,7 @@
 					</div>
 				</div>
 			</ion-item>
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryDom()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -382,7 +388,8 @@
 										</h3>
 									</ion-col>
 									<ion-col size="5">
-										<h4>{{'marked_picked' | translate}}</h4>
+										<!-- <h4>{{'marked' | translate}}</h4> -->
+										<h4>Marcado</h4>
 									</ion-col>
 								</ion-row>
 							</div>
@@ -391,7 +398,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>Cash on Pickup</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -424,7 +431,7 @@
 				</div>
 			</ion-item>
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryWare()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -440,7 +447,8 @@
 										</h3>
 									</ion-col>
 									<ion-col size="5">
-										<h4>{{'marked_picked' | translate}}</h4>
+										<!-- <h4>{{'marked' | translate}}</h4> -->
+										<h4>Marcado</h4>
 									</ion-col>
 								</ion-row>
 							</div>
@@ -449,7 +457,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>WebPay</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -483,7 +491,7 @@
 			</ion-item>
 
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryStor()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -499,7 +507,8 @@
 										</h3>
 									</ion-col>
 									<ion-col size="5">
-										<h4>{{'marked_picked' | translate}}</h4>
+										<!-- <h4>{{'marked' | translate}}</h4> -->
+										<h4>Marcado</h4>
 									</ion-col>
 								</ion-row>
 							</div>
@@ -508,7 +517,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -547,7 +556,7 @@
 		<ion-list lines="none" *ngSwitchCase="'delivered'">
 			
 			<h2>{{'past_deliveries' | translate}}</h2>
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryDom()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -572,7 +581,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>Cash on Pickup</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -605,7 +614,7 @@
 				</div>
 			</ion-item>
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryWare()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -630,7 +639,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>WebPay</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -664,7 +673,7 @@
 			</ion-item>
 
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryStor()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -689,7 +698,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -721,7 +730,7 @@
 					</div>
 				</div>
 			</ion-item>
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryDom()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -746,7 +755,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>Cash on Pickup</strong>
+											<strong>WebPay</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -779,7 +788,7 @@
 				</div>
 			</ion-item>
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryWare()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -804,7 +813,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -838,7 +847,7 @@
 			</ion-item>
 
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryStor()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -863,7 +872,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>WebPay</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -895,7 +904,7 @@
 					</div>
 				</div>
 			</ion-item>
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryDom()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -920,7 +929,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>Cash on Pickup</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -953,7 +962,7 @@
 				</div>
 			</ion-item>
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryWare()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -978,7 +987,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>WebPay</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">
@@ -1012,7 +1021,7 @@
 			</ion-item>
 
 
-			<ion-item class="item_shadow" (click)="track_delivery()">
+			<ion-item class="item_shadow" (click)="track_deliveryStor()">
 				<div class="item_inner">
 					<div class="item_header d-flex">
 						<div class="img_box">
@@ -1037,7 +1046,7 @@
 									<ion-col size="7">
 										<h3>
 											{{'payment_mode' | translate}}
-											<strong>PayPal</strong>
+											<strong>Efectivo</strong>
 										</h3>
 									</ion-col>
 									<ion-col size="5">

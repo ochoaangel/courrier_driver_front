@@ -13,8 +13,16 @@ export class DeliveriesPage implements OnInit {
   ngOnInit() {
   }
 
- track_delivery() {
+ track_deliveryDom() {
     this.route.navigate(['./deivery-info']);
+  }
+
+  track_deliveryWare() {
+    this.route.navigate(['./deivery-info-warehouse']);
+  }
+
+  track_deliveryStor() {
+    this.route.navigate(['./deivery-info-storage']);
   }
 }
  
