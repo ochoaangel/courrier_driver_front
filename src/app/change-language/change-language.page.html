@@ -4,8 +4,11 @@
 			<ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
 		</ion-buttons>
 		<ion-title>
-			<span class="d-flex">
+			<!-- <span class="d-flex">
 				{{'select_language' | translate}}
+			</span> -->
+			<span class="d-flex">
+				Seleccionar Idioma
 			</span>
 		</ion-title>
 	</ion-toolbar>
@@ -13,7 +16,8 @@
 
 <ion-content class="bg_color">
 	<ion-list lines="none">
-		<h2>{{'select_language' | translate}}</h2>
+		<!-- <h2>{{'select_language' | translate}}</h2> -->
+		<h2>Seleccionar Idioma</h2>
 		<ion-radio-group [(ngModel)]="defaultLanguageCode">
 			<ion-item *ngFor="let language of languages" class="item_shadow" (click)="onLanguageClick(language)">
 				<div class="item_inner d-flex">
@@ -26,6 +30,7 @@
 </ion-content>
 <ion-footer class="ion-no-border">
 	<ion-button size="large" class="btn" (click)="languageConfirm()">
-		{{'confirm' | translate}}
+		<!-- {{'confirm' | translate}} -->
+		Confirmar
 	</ion-button>
 </ion-footer>

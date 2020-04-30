@@ -4,7 +4,7 @@
 	min-height: 220px;
 
 	img {
-		width: 190px;
+		width: 350px;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -54,11 +54,11 @@ ion-footer {
 		--border-radius: 0;
 
 		&.facebook {
-			--background: #3b45c1;
+			--background: #6E5FC8;
 			--border-radius: 33px 0 0 0;
 		}
 		&.google {
-			--background: #ff452c; 
+			--background: #6E5FC8; 
 		}
 	}
 }

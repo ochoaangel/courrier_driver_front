@@ -10,22 +10,22 @@ export interface AppConfig {
 export const BaseAppConfig: AppConfig = {
 	availableLanguages: [{
 		code: 'en',
-		name: 'English'
+		name: 'Inglés'
 	}, {
 		code: 'ar',
-		name: 'Arabic'
+		name: 'Árabe'
 	}, {
 		code: 'es',
-		name: 'Spanish'
+		name: 'Español'
 	}, {
 		code: 'fr',
-		name: 'French'
+		name: 'Francés'
 	}, {
 		code: 'id',
-		name: 'Indonesian'
+		name: 'Indonesio'
 	}, {
 		code: 'pt',
-		name: 'Portuguese'
+		name: 'Portugués'
 	}],
 	showBuyPromt: false
 };
