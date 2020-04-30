@@ -324,6 +324,14 @@ app-deivery-info.ion-page {
 	background: var(--white) !important;
 }
 
+app-deivery-info-warehouse.ion-page {
+	background: var(--white) !important;
+}
+
+app-deivery-info-storage.ion-page {
+	background: var(--white) !important;
+}
+
 .action-sheet-wrapper {
 	.action-sheet-group {
 		border-radius: 33px 0 0 0;
@@ -403,6 +411,54 @@ ion-app[dir="rtl"] {
 	}
 
 	app-deivery-info {
+		ion-header ion-item .item_inner .item_header .img_box {
+			margin-right: 0px !important;
+			margin-left: 10px !important;
+		}
+
+		ion-content ion-list ion-item.location_detail .item_inner {
+			ion-icon.zmdi-chevron-up {
+				right: unset !important;
+				left: 0 !important;
+			}
+
+			.address_container {
+				padding: 5px 10px 5px 0px !important;
+
+				.address::before,
+				.address::after {
+					left: unset !important;
+					right: 5px !important;
+				}
+			}
+		}
+	}
+
+	app-deivery-info-warehouse {
+		ion-header ion-item .item_inner .item_header .img_box {
+			margin-right: 0px !important;
+			margin-left: 10px !important;
+		}
+
+		ion-content ion-list ion-item.location_detail .item_inner {
+			ion-icon.zmdi-chevron-up {
+				right: unset !important;
+				left: 0 !important;
+			}
+
+			.address_container {
+				padding: 5px 10px 5px 0px !important;
+
+				.address::before,
+				.address::after {
+					left: unset !important;
+					right: 5px !important;
+				}
+			}
+		}
+	}
+
+	app-deivery-info-storage {
 		ion-header ion-item .item_inner .item_header .img_box {
 			margin-right: 0px !important;
 			margin-left: 10px !important;
